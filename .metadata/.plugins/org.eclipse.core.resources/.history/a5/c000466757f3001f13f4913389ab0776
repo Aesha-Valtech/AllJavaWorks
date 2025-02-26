@@ -1,0 +1,15 @@
+package allclass;
+
+import org.springframework.stereotype.Service;
+
+import dao.CustomerDAO;
+import dao.CustomerService;
+
+@Service
+public class CustomerServiceImpl implements CustomerService{
+
+	private CustomerDAO custDAO;
+	
+	
+
+}

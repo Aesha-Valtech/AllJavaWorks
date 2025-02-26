@@ -1,0 +1,10 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Account {
+
+
+	private id;
+}

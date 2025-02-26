@@ -1,0 +1,7 @@
+
+public class testSet {
+
+	static int arryp[] = {1,2,3,4};
+	
+	int max;
+}

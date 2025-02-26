@@ -1,0 +1,30 @@
+package dao;
+
+import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate3.HibernateTemplate;
+
+import allclass.LineOrderItem;
+
+public class LineOrderItemHibernateDAOImpl implements LineOrderItemDAO{
+
+	private SessionFactory sessionFactory;
+	
+	@Override
+	public void add(LineOrderItem orditm) {
+		new HibernateTemplate(sessionFactory).save(orditm);
+		
+	}
+
+	@Override
+	public void update(LineOrderItem orditm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(LineOrderItem orditm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

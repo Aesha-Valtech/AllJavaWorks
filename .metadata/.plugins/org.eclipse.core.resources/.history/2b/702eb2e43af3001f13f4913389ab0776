@@ -1,0 +1,11 @@
+package Allclass;
+
+import javax.persistence.Entity;
+
+@Entity
+public class OrderItem {
+	
+	private long id;
+	private item_id;
+
+}

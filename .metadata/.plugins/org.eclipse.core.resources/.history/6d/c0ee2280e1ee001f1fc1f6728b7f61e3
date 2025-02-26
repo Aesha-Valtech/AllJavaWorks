@@ -1,0 +1,5 @@
+
+public class testSet {
+
+	static int arryp[4] = {};
+}

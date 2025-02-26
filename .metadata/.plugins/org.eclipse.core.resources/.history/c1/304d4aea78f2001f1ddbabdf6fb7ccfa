@@ -1,0 +1,6 @@
+package springTx;
+
+public class EmployeeServiceImpl {
+
+	private EmployeeDAO employeeDAO;
+}

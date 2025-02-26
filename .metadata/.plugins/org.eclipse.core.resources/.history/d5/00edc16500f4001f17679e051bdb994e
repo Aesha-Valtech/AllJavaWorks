@@ -1,0 +1,25 @@
+package dao;
+
+import allclass.LineOrderItem;
+
+public class LineOrderItemHibernateDAOImpl implements LineOrderItemDAO{
+
+	@Override
+	public void add(LineOrderItem orditm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(LineOrderItem orditm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(LineOrderItem orditm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

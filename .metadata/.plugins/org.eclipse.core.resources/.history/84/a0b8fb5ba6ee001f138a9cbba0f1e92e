@@ -1,0 +1,24 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class AtmTx extends Tx {
+
+	private int atm;
+
+	public AtmTx() {}
+	public AtmTx(double amt, int atm) {
+		super(amt);
+		this.atm = atm;
+	}
+
+	public int getAtm() {
+		return atm;
+	}
+
+	public void setAtm(int atm) {
+		this.atm = atm;
+	}
+	
+}

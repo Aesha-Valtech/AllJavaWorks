@@ -1,0 +1,8 @@
+package dao;
+
+import allclass.Customer;
+
+public interface CustomerDAO {
+
+	void save (Customer c);
+}

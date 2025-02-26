@@ -1,0 +1,9 @@
+package spring.test;
+
+import org.aopalliance.intercept.MethodInterceptor;
+
+public class PositiveParamsAdvice implements MethodInterceptor{
+	
+	
+
+}

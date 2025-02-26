@@ -1,0 +1,16 @@
+package spring.test;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+
+public class PositiveParamsAdvice implements MethodInterceptor{
+
+	@Override
+	public Object invoke(MethodInvocation mi) throws Throwable {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

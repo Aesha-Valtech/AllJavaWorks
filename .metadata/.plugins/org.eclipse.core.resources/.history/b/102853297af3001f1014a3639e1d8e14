@@ -1,0 +1,23 @@
+package testclass;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import allclass.Customer;
+import dao.CustomerService;
+
+public class TestCustomer {
+	
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("cust-order.xml");
+		CustomerService cs = ctx.getBean(CustomerService.class);
+		System.out.println(cs.getClass().getName());
+		cs.add(new Customer("Aesha",24,"Ahmedabad","Paldi"));
+	    Customer cust = new Customer("Aesh",24,"Ahmedabad","Paldi");
+	    cust.setCust_id(2);
+		cs.update(cust);
+		
+		
+		ctx.close();
+	}
+
+}

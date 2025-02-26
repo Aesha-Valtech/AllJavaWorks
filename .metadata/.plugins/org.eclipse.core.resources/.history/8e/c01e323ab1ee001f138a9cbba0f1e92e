@@ -1,0 +1,11 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+
+@Entity
+public class Address {
+
+	@Id @PrimaryKeyJoinColumn
+	private long id;
+}

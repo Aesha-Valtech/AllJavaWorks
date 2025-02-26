@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;Spring_Hibernate/src/main/java/springTx&apos;&#x0A;- Original project: &apos;webTest&apos;&#x0A;- Destination element: &apos;Spring_Hibernate/src/main/java/springTx&apos;&#x0A;- Original elements:&#x0A;     EmployeeDAO.java&#x0A;     Employee.java&#x0A;     EmployeeDAOImpl.java" description="Copy files" destination="=Spring_Hibernate/src\/main\/java&lt;springTx" element1="src/main/java/dao/EmployeeDAO.java" element2="src/main/java/dao/Employee.java" element3="src/main/java/dao/EmployeeDAOImpl.java" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1740378320132" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,8 @@
+package Allclass;
+
+public class Order {
+
+	private long id;
+	private long cust_id;
+	private String get_line_item;
+}

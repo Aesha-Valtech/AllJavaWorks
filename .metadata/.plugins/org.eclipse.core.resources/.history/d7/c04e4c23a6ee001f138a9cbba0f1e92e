@@ -1,0 +1,37 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class TellerTx extends Tx {
+	
+	
+	private String teller;
+	private String branch;
+	
+	public String getTeller() {
+		return teller;
+	}
+
+	public void setTeller(String teller) {
+		this.teller = teller;
+	}
+
+	public String getBranch() {
+		return branch;
+	}
+
+	public void setBranch(String branch) {
+		this.branch = branch;
+	}
+
+	public TellerTx(double amt, String teller, String branch) {
+		super(amt);
+		this.teller = teller;
+		this.branch = branch;
+	}
+	
+	
+
+	
+}

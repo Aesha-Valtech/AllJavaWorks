@@ -1,0 +1,7 @@
+package Implementations;
+
+import dao.IteamDAO;
+
+public class ItemHibernateDAOImpl implements IteamDAO{
+
+}

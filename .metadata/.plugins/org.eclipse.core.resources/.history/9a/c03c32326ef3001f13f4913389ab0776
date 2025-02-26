@@ -1,0 +1,10 @@
+package dao;
+
+import allclass.Order;
+
+public interface OrderDAO {
+	
+	void add(Order o);
+	void update(Order o);
+
+}

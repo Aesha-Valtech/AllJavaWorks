@@ -1,0 +1,29 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class CheckTx extends Tx{
+	
+	private int checkNo;
+	
+ public CheckTx() {}
+
+public CheckTx(double amt, int checkNo) {
+	super(amt);
+	this.checkNo = checkNo;
+}
+
+public int getCheckNo() {
+	return checkNo;
+}
+
+public void setCheckNo(int checkNo) {
+	this.checkNo = checkNo;
+}
+
+	
+
+	
+
+}

@@ -1,0 +1,77 @@
+package Hibernate;
+
+import javax.persistence.Embedded;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+
+import Hibernate.client.StudentAddress;
+
+@Entity
+public class Student {
+
+	private String name;
+	private String fatherName;
+	private String stream;
+	private long mobile;
+	
+	@Embedded
+	private StudentAddress cuurentAddress;
+	@Embedded
+	private StudentAddress homeAddress;
+	
+	@EmbeddedId
+	private StudentId id;
+	
+	public Student(StudentId studentId, String string, String string2, String string3, long l) {}
+	
+	public Student(String name, String fatherName, String stream, long mobile, StudentId id) {
+		super();
+		this.name = name;
+		this.fatherName = fatherName;
+		this.stream = stream;
+		this.mobile = mobile;
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getFatherName() {
+		return fatherName;
+	}
+
+	public void setFatherName(String fatherName) {
+		this.fatherName = fatherName;
+	}
+
+	public String getStream() {
+		return stream;
+	}
+
+	public void setStream(String stream) {
+		this.stream = stream;
+	}
+
+	public long getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(long mobile) {
+		this.mobile = mobile;
+	}
+
+	public StudentId getId() {
+		return id;
+	}
+
+	public void setId(StudentId id) {
+		this.id = id;
+	}
+
+	
+}

@@ -1,0 +1,34 @@
+package allclass;
+
+
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.sql.DataSource;
+
+import dao.CustomerDAO;
+
+public class CustomerDAOImpl implements CustomerDAO{
+
+	private DataSource datasource;
+	
+	public DataSource getDatasource() {
+		return datasource;
+	}
+	
+	public void setDatasource(DataSource datasource) {
+		this.datasource = datasource;
+	}
+	
+	private Connection getConnection() throws SQLException{
+		return datasource.getConnection();
+	}
+	
+	@Override
+	public void save(Customer c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

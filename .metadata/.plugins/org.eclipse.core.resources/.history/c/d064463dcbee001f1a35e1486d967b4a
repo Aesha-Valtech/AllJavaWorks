@@ -1,0 +1,21 @@
+public class AddNumbers {
+	
+
+	
+	public void fectorial(int f) {
+		int fact = 1;
+		for(int i=5;i<f;i--)
+		{
+			int res = i*f;
+			return;
+		}		
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Main");
+		
+		AddNumbers obj = new AddNumbers();
+		obj.fectorial(5);
+		System.out.println(obj);
+	}
+}

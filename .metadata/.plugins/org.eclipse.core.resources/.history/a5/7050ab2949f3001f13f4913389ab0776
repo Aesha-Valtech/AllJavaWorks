@@ -1,0 +1,13 @@
+package allclass;
+
+import dao.CustomerDAO;
+
+public class CustomerHibernateDAOImpl implements CustomerDAO{
+
+	@Override
+	public void save(Customer c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

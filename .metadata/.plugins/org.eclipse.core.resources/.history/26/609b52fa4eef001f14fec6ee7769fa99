@@ -1,0 +1,16 @@
+package Hibernate;
+
+import java.lang.annotation.Inherited;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+@Entity
+public class Account {
+
+	@Id @GeneratedValue(strategy = "acc",generator = "accseq")
+	@SequenceGenerator(name = "accseq",sequenceName = "acc_seq")
+	private long id;
+}

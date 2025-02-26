@@ -1,0 +1,53 @@
+package springTx;
+
+import java.util.List;
+
+import org.springframework.transaction.interceptor.TransactionInterceptor;
+
+public class EmployeeServiceImpl implements EmployeeService {
+
+	private EmployeeDAO employeeDAO;
+	
+	
+	@Override
+	public void save(Employee e) {
+		employeeDAO.save(e);
+//		throw new RuntimeException("check Rollback...");
+//		TransactionInterceptor.currentTransactionStatus().setRollbackOnly();
+	}
+
+
+	@Override
+	public void update(Employee e) {
+		employeeDAO.update(e);
+	}
+
+
+	@Override
+	public void delete(int id) {
+		employeeDAO.delete(id);
+	}
+
+
+	@Override
+	public List<Employee> getAll() {
+		return employeeDAO.getAll();
+	}
+
+
+	@Override
+	public Employee get(int id) {
+		return employeeDAO.get(id);
+	}
+
+
+	@Override
+	public void sortByOrder(String s) {
+		employeeDAO.sortByOrder(s);
+	}
+
+
+	public void setEmployeeDAO(EmployeeDAO employeeDAO) {
+		this.employeeDAO = employeeDAO;
+	}
+}

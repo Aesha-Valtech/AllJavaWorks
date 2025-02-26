@@ -1,0 +1,5 @@
+package Hibernate.client;
+
+public class StudentAddress {
+
+}

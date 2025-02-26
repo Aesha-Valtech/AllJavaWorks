@@ -1,0 +1,8 @@
+package Hibernate;
+
+public class Student {
+
+	private String name;
+	private String fatherName;
+	
+}

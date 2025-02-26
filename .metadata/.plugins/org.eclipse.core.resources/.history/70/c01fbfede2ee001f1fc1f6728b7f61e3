@@ -1,0 +1,25 @@
+
+public class testSet {
+
+	static int arryp[] = {1,2,3,4};
+	
+	static int largno() {
+		
+		int max = arryp[0];
+		
+		for(int i=1; i < arryp.length;i++) {
+			
+			if(arryp[i]>max) {
+				max=arryp[i];
+				}
+			
+		}
+		return max;
+
+	}
+	
+	public static void main(String[] args) {
+		testSet tob = new testSet();
+		tob.largno();
+	}
+}

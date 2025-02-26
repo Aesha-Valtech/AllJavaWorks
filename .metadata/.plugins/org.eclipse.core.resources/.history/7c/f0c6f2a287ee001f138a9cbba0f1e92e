@@ -1,0 +1,16 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Car {
+
+	@Id
+	private long id;
+	private String manufeacture;
+	private String name;
+	private int year;
+	
+	
+	
+}

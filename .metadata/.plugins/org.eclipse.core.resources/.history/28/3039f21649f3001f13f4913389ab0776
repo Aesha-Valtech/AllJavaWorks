@@ -1,0 +1,7 @@
+package allclass;
+
+import dao.CustomerDAO;
+
+public class CustomerHibernateDAOImpl implements CustomerDAO{
+
+}

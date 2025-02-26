@@ -1,0 +1,17 @@
+package allclass;
+
+import org.hibernate.SessionFactory;
+
+import dao.CustomerDAO;
+
+public class CustomerHibernateDAOImpl implements CustomerDAO{
+
+	private SessionFactory sessionFactory;
+	
+	@Override
+	public void save(Customer c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

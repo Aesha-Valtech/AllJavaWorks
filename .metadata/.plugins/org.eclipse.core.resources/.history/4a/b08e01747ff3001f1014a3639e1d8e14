@@ -1,0 +1,11 @@
+package dao;
+
+import allclass.Item;
+
+public interface IteamDAO {
+	
+	void add(Item itm);
+	void update();
+	void delete();
+
+}

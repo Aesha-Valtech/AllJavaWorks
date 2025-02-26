@@ -1,0 +1,27 @@
+package Hibernate;
+
+public class Tx {
+	
+	private long id;
+	private double amt;
+	
+	
+	
+	privet Tx() {}
+	
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public double getAmt() {
+		return amt;
+	}
+	public void setAmt(double amt) {
+		this.amt = amt;
+	}
+	
+
+}

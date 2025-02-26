@@ -1,0 +1,17 @@
+public class AddNumbers {
+	
+
+	
+	public void fectorial(int f) {
+		
+		for(int i=0;i<f;i--)
+		{
+			int res = 
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Main");
+	}
+}

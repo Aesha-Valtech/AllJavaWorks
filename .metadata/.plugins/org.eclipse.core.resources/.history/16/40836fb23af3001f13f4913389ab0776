@@ -1,0 +1,66 @@
+package Allclass;
+
+import java.util.Objects;
+
+@Entity
+public class Customer {
+	
+	private long id;
+	private String cust_name;
+	private String age;
+	private String address;
+	private String per_add;
+	
+	public Customer() {}
+	
+	
+	public Customer(long id, String cust_name, String age, String address, String per_add) {
+		super();
+		this.id = id;
+		this.cust_name = cust_name;
+		this.age = age;
+		this.address = address;
+		this.per_add = per_add;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", cust_name=" + cust_name + ", age=" + age + ", address=" + address
+				+ ", per_add=" + per_add + "]";
+	}
+	
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getCust_name() {
+		return cust_name;
+	}
+	public void setCust_name(String cust_name) {
+		this.cust_name = cust_name;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getPer_add() {
+		return per_add;
+	}
+	public void setPer_add(String per_add) {
+		this.per_add = per_add;
+	}
+
+}

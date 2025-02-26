@@ -1,0 +1,2 @@
+127.0.0.1 - - [20/Feb/2025:10:13:11 +0530] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [20/Feb/2025:10:13:12 +0530] "GET /Spring_Hibernate/WEB-INF/classes/Hibernate/client/HibernateClient.java HTTP/1.1" 404 1053

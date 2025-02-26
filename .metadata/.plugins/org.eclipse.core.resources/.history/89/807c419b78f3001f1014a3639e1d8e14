@@ -1,0 +1,7 @@
+package allclass;
+
+import dao.OrderDAO;
+
+public class OrderHibernateDAOImpl implements OrderDAO{
+
+}

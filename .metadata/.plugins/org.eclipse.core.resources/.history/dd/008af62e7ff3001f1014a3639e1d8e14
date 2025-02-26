@@ -1,0 +1,33 @@
+package allclass;
+
+import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate3.HibernateTemplate;
+
+import dao.OrderDAO;
+
+public class OrderHibernateDAOImpl implements OrderDAO{
+
+	private SessionFactory sessionFactory;
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+	@Override
+	public void add(Order o) {
+		new HibernateTemplate(sessionFactory).save(o);
+		
+	}
+
+	@Override
+	public void update(Order o) {
+		new HibernateTemplate(sessionFactory).update(o);
+		
+	}
+
+	@Override
+	public void delete(Order o) {
+		new HibernateTemplate(sessionFactory).delete(o);
+		
+	}
+
+}

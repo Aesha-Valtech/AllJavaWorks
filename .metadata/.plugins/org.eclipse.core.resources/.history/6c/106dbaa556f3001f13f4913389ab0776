@@ -1,0 +1,10 @@
+package dao;
+
+import org.springframework.stereotype.Service;
+
+import allclass.Customer;
+
+@Service
+public interface CustomerService {
+	void save (Customer c);
+}

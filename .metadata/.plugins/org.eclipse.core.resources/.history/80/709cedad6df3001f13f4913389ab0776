@@ -1,0 +1,19 @@
+package allclass;
+
+import dao.OrderService;
+
+public class OrderServiceImpl implements OrderService{
+
+	@Override
+	public void placeOrder() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void checkStatus() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

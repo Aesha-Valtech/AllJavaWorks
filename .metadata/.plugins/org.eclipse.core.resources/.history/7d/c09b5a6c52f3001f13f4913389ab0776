@@ -1,0 +1,7 @@
+package allclass;
+
+import dao.CustomerService;
+
+public class CustomerServiceImpl implements CustomerService{
+
+}

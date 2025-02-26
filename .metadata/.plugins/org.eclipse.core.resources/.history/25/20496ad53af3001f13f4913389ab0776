@@ -1,0 +1,10 @@
+package Allclass;
+
+import javax.persistence.Entity;
+
+@Entity
+public class OrderItem {
+	
+	
+
+}

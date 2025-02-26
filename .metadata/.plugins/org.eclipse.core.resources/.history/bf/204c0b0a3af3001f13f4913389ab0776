@@ -1,0 +1,46 @@
+package Allclass;
+
+import org.hibernate.annotations.Entity;
+
+@Entity
+public class Customer {
+	
+	private long id;
+	private String cust_name;
+	private String age;
+	private String address;
+	private String per_add;
+	
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getCust_name() {
+		return cust_name;
+	}
+	public void setCust_name(String cust_name) {
+		this.cust_name = cust_name;
+	}
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getPer_add() {
+		return per_add;
+	}
+	public void setPer_add(String per_add) {
+		this.per_add = per_add;
+	}
+
+}

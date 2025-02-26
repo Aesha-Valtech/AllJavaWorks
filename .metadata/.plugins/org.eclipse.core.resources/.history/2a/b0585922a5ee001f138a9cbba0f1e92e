@@ -1,0 +1,36 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Tx {
+	
+	private long id;
+	private double amt;
+	
+	
+	
+	private Tx() {}
+	
+	
+	public Tx(double amt) {
+	
+		this.amt = amt;
+	}
+
+
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public double getAmt() {
+		return amt;
+	}
+	public void setAmt(double amt) {
+		this.amt = amt;
+	}
+	
+
+}

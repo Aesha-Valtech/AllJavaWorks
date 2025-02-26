@@ -1,0 +1,13 @@
+
+public class testSet {
+
+	static int arryp[] = {1,2,3,4};
+	
+	static largno() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

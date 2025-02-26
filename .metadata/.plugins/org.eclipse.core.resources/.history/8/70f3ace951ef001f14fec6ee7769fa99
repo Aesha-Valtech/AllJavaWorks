@@ -1,0 +1,59 @@
+package Hibernate;
+
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+//@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+//@Table(name="Tblper")
+
+//@Inheritance(strategy = InheritanceType.JOINED)
+
+//single table
+
+
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name="disc")  //it's store name of class
+@DiscriminatorValue(value="tx")
+@Table(name="allTxt")
+public class Tx {
+	
+	@Id @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "txtseq")
+	@SequenceGenerator(name="txtseq", sequenceName = "txt_seq",allocationSize = 1)
+	private long id;
+	private double amt;
+	
+	
+	
+	public Tx() {}
+	
+	
+	public Tx(double amt) {
+	
+		this.amt = amt;
+	}
+
+
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public double getAmt() {
+		return amt;
+	}
+	public void setAmt(double amt) {
+		this.amt = amt;
+	}
+	
+
+}

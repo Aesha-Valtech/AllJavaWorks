@@ -1,0 +1,7 @@
+package Hibernate;
+
+public class StudentId {
+
+	private int rollno;
+	private int year;
+}

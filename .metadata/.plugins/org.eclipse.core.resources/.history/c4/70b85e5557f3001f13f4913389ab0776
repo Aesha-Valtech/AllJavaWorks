@@ -1,0 +1,22 @@
+package allclass;
+
+import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate3.HibernateTemplate;
+
+import dao.CustomerDAO;
+
+public class CustomerHibernateDAOImpl implements CustomerDAO{
+
+	private SessionFactory sessionFactory;
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+	
+	@Override
+	public void save(Customer c) {
+		new HibernateTemplate(sessionFactory).save(c);
+			
+	}
+
+}

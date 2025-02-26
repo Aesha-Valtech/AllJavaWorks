@@ -1,0 +1,10 @@
+package spring.ioc;
+
+public class PointFactory {
+	
+	public Point CreatePoint(){
+	
+		return new Point();
+	}
+
+}

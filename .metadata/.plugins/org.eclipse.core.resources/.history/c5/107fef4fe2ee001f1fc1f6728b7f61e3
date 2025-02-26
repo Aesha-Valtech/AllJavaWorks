@@ -1,0 +1,14 @@
+
+public class testSet {
+
+	static int arryp[] = {1,2,3,4};
+	
+	static void largno() {
+		
+		int max = arryp[0];
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

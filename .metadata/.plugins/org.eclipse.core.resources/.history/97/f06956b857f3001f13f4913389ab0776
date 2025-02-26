@@ -1,0 +1,49 @@
+package allclass;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import dao.CustomerDAO;
+import dao.CustomerService;
+
+@Service
+public class CustomerServiceImpl implements CustomerService{
+
+	private CustomerDAO custDAO;
+
+	@Override
+	public void add(Customer c) {
+		custDAO.add(c);
+		
+	}
+
+	@Override
+	public void update(Customer c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Customer c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Customer get(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Customer> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+	
+
+}

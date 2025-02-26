@@ -1,0 +1,25 @@
+package allclass;
+
+import dao.OrderDAO;
+
+public class OrderHibernateDAOImpl implements OrderDAO{
+
+	@Override
+	public void add(Order o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Order o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Order o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

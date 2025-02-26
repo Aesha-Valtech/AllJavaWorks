@@ -1,0 +1,9 @@
+package Hibernate;
+
+public class Tx {
+	
+	private long id;
+	private double amt;
+	
+
+}

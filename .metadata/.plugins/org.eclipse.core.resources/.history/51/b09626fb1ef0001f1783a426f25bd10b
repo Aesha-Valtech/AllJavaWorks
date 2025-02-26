@@ -1,0 +1,22 @@
+package spring.ioc.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.apache.naming.factory.BeanFactory;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import spring.ioc.SimpleInterface;
+
+class iocTest {
+
+	@Test
+	void test() {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("ioc.xml");
+		
+		SimpleInterface si = (SimpleInterest) ctx.getBean("si");
+		assertEquals(200, si.compute(200, 10, 4));
+ 	}
+
+}

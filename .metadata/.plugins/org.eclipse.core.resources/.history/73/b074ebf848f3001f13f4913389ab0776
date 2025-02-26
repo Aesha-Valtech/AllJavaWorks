@@ -1,0 +1,6 @@
+package dao;
+
+public interface CustomerDAO {
+
+	void save (Customer c);
+}

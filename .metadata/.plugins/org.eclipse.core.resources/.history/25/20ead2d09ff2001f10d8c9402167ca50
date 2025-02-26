@@ -1,0 +1,23 @@
+package spring.test;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import springTx.Employee;
+import springTx.Employee.Gender;
+import springTx.EmployeeService;
+
+public class TxClient {
+	
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("TxAnnotaion.xml");
+		EmployeeService es = ctx.getBean(EmployeeService.class);
+		System.out.println(es.getClass().getName());
+		
+		es.save(new Employee(10,"Darshi",25,12000,12,Gender.FEMALE,12));
+//		System.out.println(es);
+		es.getAll().forEach(e -> System.out.println(e));
+		
+		ctx.close();
+	}
+
+}

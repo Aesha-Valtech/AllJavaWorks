@@ -1,0 +1,34 @@
+package Implementations;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import allclass.Order.order_status;
+import dao.OrderDAO;
+import dao.OrderService;
+
+@Service
+public class OrderServiceImpl implements OrderService{
+
+	@Autowired
+	private OrderDAO orderDAO;
+	
+	public void setOrderDAO(OrderDAO orderDAO) {
+		this.orderDAO = orderDAO;
+	}
+	
+	
+	
+	@Override
+	public void placeOrder() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void checkStatus() {
+//		if(order_status.PENDING == true)
+		
+	}
+
+}

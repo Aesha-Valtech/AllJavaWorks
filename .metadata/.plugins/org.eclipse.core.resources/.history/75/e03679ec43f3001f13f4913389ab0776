@@ -1,0 +1,14 @@
+package Allclass;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Item {
+
+	private long id;
+	private String name;
+	private String desc;
+	private int currt_qty;
+	private int reorder_qty;
+	private int max_qty;
+}

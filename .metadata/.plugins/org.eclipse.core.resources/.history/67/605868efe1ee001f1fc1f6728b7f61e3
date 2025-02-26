@@ -1,0 +1,11 @@
+
+public class testSet {
+
+	static int arryp[] = {1,2,3,4};
+	
+	int max;
+	
+	public static void main(String[] args) {
+		
+	}
+}

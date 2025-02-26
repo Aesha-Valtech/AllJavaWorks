@@ -1,0 +1,11 @@
+package springTx;
+
+public class EmployeeServiceImpl {
+
+	private EmployeeDAO employeeDAO;
+	
+	
+	public void setEmployeeDAO(EmployeeDAO employeeDAO) {
+		this.employeeDAO = employeeDAO;
+	}
+}

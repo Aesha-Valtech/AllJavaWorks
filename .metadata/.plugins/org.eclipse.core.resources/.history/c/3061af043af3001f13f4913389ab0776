@@ -1,0 +1,14 @@
+package Allclass;
+
+import org.hibernate.annotations.Entity;
+
+@Entity
+public class Customer {
+	
+	private long id;
+	private String cust_name;
+	private String age;
+	private String address;
+	private String per_add;
+
+}

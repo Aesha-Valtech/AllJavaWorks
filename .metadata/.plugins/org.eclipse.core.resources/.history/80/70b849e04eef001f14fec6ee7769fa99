@@ -1,0 +1,13 @@
+package Hibernate;
+
+import java.lang.annotation.Inherited;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Account {
+
+	@Id
+	private id;
+}

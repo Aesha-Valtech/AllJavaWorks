@@ -1,0 +1,13 @@
+package allclass;
+
+import dao.CustomerService;
+
+public class CustomerServiceImpl implements CustomerService{
+
+	@Override
+	public void save(Customer c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

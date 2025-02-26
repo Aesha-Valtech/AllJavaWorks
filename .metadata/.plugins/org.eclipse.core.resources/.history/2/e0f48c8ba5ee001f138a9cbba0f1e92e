@@ -1,0 +1,10 @@
+package Hibernate;
+
+public class CheckTx extends Tx{
+
+	public CheckTx(double amt) {
+		super(amt);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,6 @@
+package spring.ioc;
+
+public class SimpleInterestImpl {
+
+	private Arithmetic arithmetic;
+}

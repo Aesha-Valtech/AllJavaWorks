@@ -1,0 +1,17 @@
+package spring.ioc.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.apache.naming.factory.BeanFactory;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+class iocTest {
+
+	@Test
+	void test() {
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("ioc.xml");
+ 	}
+
+}

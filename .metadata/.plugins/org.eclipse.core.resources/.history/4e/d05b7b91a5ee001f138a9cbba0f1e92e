@@ -1,0 +1,13 @@
+package Hibernate;
+
+import javax.persistence.Entity;
+
+@Entity
+public class CheckTx extends Tx{
+
+	public int CheckTx(double amt) {
+		super(amt);
+		// TODO Auto-generated constructor stub
+	}
+
+}

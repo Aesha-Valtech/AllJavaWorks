@@ -1,0 +1,27 @@
+package allclass;
+
+
+
+import javax.sql.DataSource;
+
+import dao.CustomerDAO;
+
+public class CustomerDAOImpl implements CustomerDAO{
+
+	private DataSource datasource;
+	
+	public DataSource getDatasource() {
+		return datasource;
+	}
+	
+	public void setDatasource(DataSource datasource) {
+		this.datasource = datasource;
+	}
+	
+	@Override
+	public void save(Customer c) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+package spring.ioc;
+
+public class UtilsBean {
+	
+	private Set<String> names;
+
+}

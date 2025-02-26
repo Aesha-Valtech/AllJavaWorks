@@ -1,0 +1,32 @@
+package allclass;
+
+import org.hibernate.SessionFactory;
+
+import dao.OrderDAO;
+
+public class OrderHibernateDAOImpl implements OrderDAO{
+
+	private SessionFactory sessionFactory;
+	
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+	@Override
+	public void add(Order o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Order o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(Order o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
