@@ -87,13 +87,6 @@ public class DeptServlet extends HttpServlet{
 		session.setAttribute("current", deptDAO.first());
 		req.getRequestDispatcher("Department.jsp").forward(req, resp);
 		
-//		write sorting logic here
-//		if(name eqauls(SortBy)){
-//		if("asc" == sortBy){
-		
-//		use camparotor here like .stream.collect
-//		}
-//	}
 
 		
 	}
